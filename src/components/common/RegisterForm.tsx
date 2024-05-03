@@ -9,7 +9,6 @@ function Register() {
     const [userData, setUserData] = useState<User>({
         nombre: '',
         correo: '',
-        descripcion: '',
         contraseña: ''
     });
 
@@ -36,14 +35,17 @@ function Register() {
             alert('Por favor, complete todos los campos del formulario.');
             return;
         }
-    
+
         if (userData.contraseña !== repeatPassword) {
             alert('Las contraseñas no coinciden');
             return;
         }
- 
-        await registerUser(userData); 
+        
+        await registerUser(userData);
     };
+
+
+    // const [showMenssage, SetShowMenssage]=useState<Boolean>(isValid)
 
     return (
 
@@ -68,7 +70,7 @@ function Register() {
                                         <input
                                             placeholder="Full Name"
                                             type="text"
-                                            className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                            className="text-gray-900 flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                                             name="nombre"
                                             value={userData.nombre}
                                             onChange={handleInputChange}
@@ -83,7 +85,7 @@ function Register() {
                                         <input
                                             placeholder="Email"
                                             type="email"
-                                            className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                            className="text-gray-900 flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                                             name="correo"
                                             value={userData.correo}
                                             onChange={handleInputChange}
@@ -98,7 +100,7 @@ function Register() {
                                         <input
                                             placeholder="Password"
                                             type="password"
-                                            className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                            className="text-gray-900 flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                                             name="contraseña"
                                             value={userData.contraseña}
                                             onChange={handleInputChange}
@@ -113,7 +115,7 @@ function Register() {
                                         <input
                                             placeholder="Repeat Password"
                                             type="password"
-                                            className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                            className="text-gray-900 flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                                             value={repeatPassword}
                                             onChange={handleRepeatPasswordChange}
                                         />

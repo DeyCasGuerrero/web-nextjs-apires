@@ -15,26 +15,26 @@ export default function EventSection() {
         <>
             {session?.user ? (
 
-                <section id="proyecto" className="bg-gradient-to-r from-slate-900 to-slate-700 flex items-center p-12 justify-around">
+                <section id="proyecto" className="bg-gradient-to-r from-slate-900 to-slate-700 overflow-hidden flex items-start p-12 max-sm:p-6 justify-around max-sm:flex-col max-sm:gap-y-8">
 
-                    <aside className="bg-black w-80 h-96 p-10 rounded-xl flex flex-col items-center gap-8 border-t-4 border-yellow-300">
+                    <aside className="bg-black w-80 h-96 p-10 rounded-xl flex flex-col items-center gap-8 border-t-4 border-yellow-300 max-sm:w-full">
                         <NextJsIcon width={100} height={100}></NextJsIcon>
                         <div className="text-white flex flex-col items-center justify-center gap-6 ">
                             <h2 className="font-bold text-xl  underline">NEXT JS</h2>
                             <Link href="https://nextjs.org/docs" target="_blank">
-                                <p className="font-mono tracking-wider text-center no-underline cursor-pointer hover:underline hover:text-yellow-300">Entrar a su documentación</p>
+                                <p className="font-mono tracking-wider text-center no-underline cursor-pointer hover:underline hover:text-yellow-300">Entrar al link de la documentación</p>
                             </Link>
                         </div>
                     </aside>
 
-                    <div className="bg-black w-2/5 rounded-xl border-t-2 border-yellow-300 p-8 flex flex-col ">
+                    <div className="bg-black w-2/5 rounded-xl border-t-2 border-yellow-300 p-8 flex flex-col max-sm:w-full max-sm:p-4">
                         <h2 className=" uppercase text-center text-4xl text-yellow-300">PROYECTOS</h2>
                         <br />
                         <h1 className='text-white text-center font-mono text-2xl'>Proyectos en Nextjs hechos por mi en mi GitHub</h1>
                         <ProyectList></ProyectList>
                     </div>
 
-                    <div className="bg-black text-white w-72 h-96 p-8 rounded-xl border-t-2 border-yellow-300 flex flex-col items-center gap-8 justify-center">
+                    <div className="bg-black text-white w-72 h-96 p-8 rounded-xl border-t-2 border-yellow-300 flex flex-col items-center gap-8 justify-center max-sm:w-full">
                         <p className="font-mono text-2xl underline text-yellow-300">NEXTJS LINKS</p>
 
                         <Link href="https://twitter.com/nextjs" target="_blank" >

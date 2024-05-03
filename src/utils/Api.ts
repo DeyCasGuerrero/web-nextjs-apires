@@ -1,6 +1,11 @@
-export async function fetchApi() {
+export async function fetchApi(userId?:number) {
     try {
-        const apiUrl = `${process.env.API_URL}`;
+        let apiUrl = `${process.env.API_URL}`;
+
+        if (userId) {
+            apiUrl += `/${userId}`;
+        }
+
         const response = await fetch(apiUrl);
 
         if (!response.ok) {
