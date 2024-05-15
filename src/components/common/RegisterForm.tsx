@@ -8,18 +8,17 @@ import { User } from "@/types/UserType";
 function Register() {
     const router = useRouter();
     const { session } = useAuth();
-
-    if (session) {
-        router.back();
-    }
-
+    const [repeatPassword, setRepeatPassword] = useState<string>('');
     const [userData, setUserData] = useState<User>({
         nombre: '',
         email: '',
         password: '',
     });
+    
+    if (session) {
+        router.back();
+    }
 
-    const [repeatPassword, setRepeatPassword] = useState<string>('');
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;

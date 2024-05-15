@@ -6,8 +6,6 @@ export function useRegisterUser(): { registerUser: (userData: User) => void } {
 
     const registerUser = async (userData: User) => {
         try {
-            
-            console.log('Datos del usuario a enviar:', userData);
             const response = await fetch( `${process.env.NEXT_PUBLIC_APIRES_URL}/api/usuario/guardar/usuario`, {
                 method: 'POST',
                 headers: {
