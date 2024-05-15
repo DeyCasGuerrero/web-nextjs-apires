@@ -142,7 +142,7 @@ export default function LoginForm() {
                     </button>
                 </div>
                 <div className="text-sm text-center mt-[1.6rem] ">
-                    <p className="text-black">Don’t have an account yet? </p>
+                    <p className="text-black">Dont have an account yet? </p>
                     <Link href="register" className="text-sm text-[#7747ff]" >Sign up for free!</Link>
                 </div>
             </div>
