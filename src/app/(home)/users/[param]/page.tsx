@@ -14,7 +14,7 @@ async function Profiles({ params }) {
                 <p className="text-yellow-300 text-xl bg">{profile.email}</p>
                 <h2 className="text-pink-500 text-xl">{profile.last_name}</h2>
                 <h1 className="text-pink-500 text-2xl">{profile.first_name}</h1>
-                <img src={profile.avatar} className="rounded-full border-2 border-yellow-300 "></img>
+                <img  src={profile.avatar} alt="perfil" className="rounded-full border-2 border-yellow-300 "></img>
             </div>
 
 

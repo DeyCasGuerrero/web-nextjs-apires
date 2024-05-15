@@ -4,7 +4,6 @@ import { useProjectData } from '@/hooks/useGetApiRes';
 import Link from 'next/link';
 import GitHubIcon from '../icons/GitHubIcon';
 
-
 function ProyectList() {
 
     const projects: Project[] = useProjectData();

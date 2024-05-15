@@ -40,7 +40,7 @@ export default function Header() {
                         <p className="font-bold tracking-tight bg-yellow-300 p-2 rounded-md max-sm:hidden">{session?.user ? session.user.name : userData?.nombre}</p>
                         {userImage ? (
                             <Link href={`/profile`}>
-                                <img src={userImage} alt="Foto de perfil" className="w-14 h-14 rounded-full cursor-pointer  hover:shadow-md hover:scale-110 transition duration-300 focus:outline-none" />
+                                <img src={userImage} alt="Foto de perfil"  width={100} height={100}  className="w-14 h-14 rounded-full cursor-pointer  hover:shadow-md hover:scale-110 transition duration-300 focus:outline-none" />
                             </Link>
                         ) : (
                             <div className="w-10 h-10 rounded-full bg-gray-300 cursor-pointer" />

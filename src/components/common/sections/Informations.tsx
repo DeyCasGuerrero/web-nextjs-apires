@@ -13,7 +13,7 @@ export default function InformationSection() {
                 </details>
                 <details name="cookies" className="border border-black shadow-lg bg-slate-800 p-6 rounded-md cursor-pointer">
                     <summary className="transition-all duration-300 ease-in-out cursor-pointer" data-value="2">¿Cómo crear una app con Next.js?</summary>
-                    <p>Para crear una app en Next.js, debes buscar en tu navegador "create app Next.js", ahí encontrarás toda la documentación. Si no quieres leer toda la documentación, entonces solo coloca este comando en tu terminal: "npx create-next-app@latest".</p>
+                    <p>Para crear una app en Next.js, debes buscar en tu navegador &quot;create app Next.js&quot;, ahí encontrarás toda la documentación. Si no quieres leer toda la documentación, entonces solo coloca este comando en tu terminal: &quot;npx create-next-app@latest&quot;.</p>
                 </details>
                 <details name="cookies" className="border border-black shadow-lg bg-slate-800 p-6 rounded-md cursor-pointer">
                     <summary className="transition-all duration-300 ease-in-out cursor-pointer" data-value="3">¿Por qué debería usar Next.js?</summary>

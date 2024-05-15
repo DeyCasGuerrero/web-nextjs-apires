@@ -14,6 +14,11 @@ export default function LoginForm() {
     const { session } = useAuth();
     const { signUser, errorSignIn, isSignedIn, authenticatedUser } = useSignIn();
 
+    const [credentials, setCredentials] = useState<User>({
+        email: '',
+        password: '',
+    });
+
     useEffect(() => {
         // Si el usuario está autenticado, guarda los datos en el localStorage
         if (authenticatedUser) {
@@ -35,12 +40,6 @@ export default function LoginForm() {
         router.back();
         return null
     }
-
-
-    const [credentials, setCredentials] = useState<User>({
-        email: '',
-        password: '',
-    });
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
