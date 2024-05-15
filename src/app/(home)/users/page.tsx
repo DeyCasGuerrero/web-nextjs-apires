@@ -11,8 +11,6 @@ async function Users() {
             {usersJsonHolder.map((user: UserReqres) => (
                 <div key={user.id} className="bg-black rounded-2xl p-5 flex flex-col items-center justify-center overflow-hidden">
                     <h1 className="font-bold tracking-wider text-xl md:text-2xl text-yellow-300">{user.first_name}</h1>
-                    <h2 className="text-lg md:text-xl font-serif">{user.last_name}</h2>
-                    <p className="font-mono tracking-widest text-lg md:text-xl text-pink-700 max-sm:tracking-tighter ">{user.email}</p>
                     {user.avatar ? (
                         <img
                             className="rounded-xl bg-gradient-to-br from-black via-transparent to-black"
@@ -26,7 +24,7 @@ async function Users() {
                     <Link href={`users/${user.id}`}>
                         <Button 
                             color="text-blue-500"
-                            bg="bg-gray-200"
+                            bg="bg-slate-900"
                             buttonText="Entrar perfil">
                         </Button>
                     </Link>

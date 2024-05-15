@@ -4,6 +4,7 @@ export const config = {
     matcher:
         [
             "/users",
-            '/users/:path*'
+            '/users/:path*',
+            "/profile"
         ]
 }

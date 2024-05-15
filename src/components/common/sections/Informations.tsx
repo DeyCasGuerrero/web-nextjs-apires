@@ -1,9 +1,6 @@
-
-
 import NextJsIcon from "../../icons/NextJSIcon";
 
 export default function InformationSection() {
-
 
     return (
         <section className="bg-gradient-to-r from-slate-900 to-slate-700 p-8 text-white flex justify-around flex-wrap max-sm:flex-col max-sm:p-4 max-md:justify-normal overflow-hidden" id="info">

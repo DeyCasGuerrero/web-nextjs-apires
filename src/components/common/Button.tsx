@@ -1,4 +1,3 @@
-"use client"
 
 interface ButtonProps{
     color?:string;
@@ -15,7 +14,7 @@ const Button:React.FC<ButtonProps>=({color, buttonText, bg})=> {
     }
 
     return (
-        <button className={`p-2 rounded-lg mt-4 ${buttonStyles.color} ${buttonStyles.bg}`} >
+        <button className={`p-2 rounded-lg mt-4 hover:scale-x-110 animate-pulse ${buttonStyles.color} ${buttonStyles.bg}`} >
             {buttonText}
         </button>
     )

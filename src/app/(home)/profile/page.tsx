@@ -1,9 +1,9 @@
 "use client"
-import { useAuthGmail } from "@/hooks/useAuth"
+import { useAuth } from "@/hooks/useAuth"
 
 
 export default function Profile() {
-    const { session, userImage } = useAuthGmail();
+    const { session, userImage } = useAuth();
 
     return (
         <>

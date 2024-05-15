@@ -1,9 +1,9 @@
 export interface User {
     id?: number;
-    nombre: string;
-    correo: string;
+    nombre?: string;
+    email: string;
     descripcion?:string;
-    contraseña:string;
+    password:string;
 }
 
 export interface Project {

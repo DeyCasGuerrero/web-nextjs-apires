@@ -1,7 +1,5 @@
 
-
 function SecondHeader() {
-
     return (
         <header className="flex items-center justify-between p-3 bg-white ">
             <div className="">

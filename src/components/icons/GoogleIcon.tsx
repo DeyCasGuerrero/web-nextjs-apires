@@ -1,10 +1,11 @@
 import * as React from "react"
-import { SVGProps } from "react"
-const GoogleIcon = (props: SVGProps<SVGSVGElement>) => (
+import { SvgIconsProps } from "@/types/SvgTypes"
+
+const GoogleIcon: React.FC<SvgIconsProps> = ({ size = 20, color = "#fff", ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
+    width={size}
+    height={size}
     viewBox="-0.5 0 48 48"
     {...props}
   >

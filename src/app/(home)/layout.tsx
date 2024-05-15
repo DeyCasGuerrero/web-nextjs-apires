@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { Providers } from "./Context/Providers";
+import "../globals.css";
+import { Providers } from "../Context/Providers";
 import SecondHeader from "@/components/common/SecondHeader";
 import Navbar from "@/components/NavBar/Navbar";
 import Footer from "@/components/common/Footer";
@@ -23,9 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <FirstHeader ></FirstHeader>
-          <SecondHeader ></SecondHeader>
-          <Navbar  ></Navbar>
+          <FirstHeader/>
+          <SecondHeader/>
+          <Navbar/>
           {children}
           <Footer></Footer>
         </Providers>

@@ -2,29 +2,13 @@ import { useEffect, useState } from "react";
 import { User ,Project, News} from "@/types/UserType";
 
 
-/*export function useFetchUsers():User[]{
-    const [users , setUsers] = useState<User[]>([]);
-
-    useEffect(() => {
-        fetch('http://localhost:8080/api/usuario/all')
-            .then(response => response.json())
-            .then((data: User[]) => {
-                setUsers(data);
-            })
-            .catch(error => {
-                console.error('Error al obtener el usuario:', error);
-            });
-    }, []);
-
-    return users;
-}*/ 
-
-
 export function useProjectData ():Project[]{
     const [projects, setProjects] = useState<Project[]>([]);
 
+    const apiUrl = `${process.env.NEXT_PUBLIC_APIRES_URL}/api/proyecto/all`
+
     useEffect(() => {
-        fetch('https://alluring-emotion-production.up.railway.app/api/proyecto/all')
+        fetch(apiUrl)
             .then(response => response.json())
             .then((data: Project[]) => {
                 setProjects(data);
@@ -41,9 +25,9 @@ export function useProjectData ():Project[]{
 
 export function useNewData ():News[]{
     const [news, setNews] = useState<News[]>([]);
-
+const apiUrl = `${process.env.NEXT_PUBLIC_APIRES_URL}/api/noticias/all`
     useEffect(() => {
-        fetch('https://alluring-emotion-production.up.railway.app/api/noticias/all')
+        fetch(apiUrl)
             .then(response => response.json())
             .then((data: News[]) => {
                 setNews(data);
