@@ -39,7 +39,7 @@ export default function Header() {
                     <div className="flex gap-x-2 items-center">
                         <p className="font-bold tracking-tight bg-yellow-300 p-2 rounded-md max-sm:hidden">{session?.user ? session.user.name : userData?.nombre}</p>
                         {userImage ? (
-                            <Link href={`/profile`}>
+                            <Link href="profile">
                                 <img src={userImage} alt="Foto de perfil"  width={100} height={100}  className="w-14 h-14 rounded-full cursor-pointer  hover:shadow-md hover:scale-110 transition duration-300 focus:outline-none" />
                             </Link>
                         ) : (
@@ -52,7 +52,7 @@ export default function Header() {
                     </div>
                 ) : (
                     <p className="text-white font-bold uppercase hover:text-yellow-200 hover:underline">
-                        <Link href={`/form`}>
+                        <Link href="form">
                             Iniciar sesión
                         </Link>
                     </p>
