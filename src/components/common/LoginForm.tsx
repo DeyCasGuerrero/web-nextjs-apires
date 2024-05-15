@@ -56,16 +56,14 @@ export default function LoginForm() {
 
     return (
 
-        <div
-            className=""
-        >
+        <div>
             <div className="xl:mx-auto xl:w-full shadow-md p-4 xl:max-w-sm 2xl:max-w-md">
                 <div className="mb-2 flex justify-center"></div>
                 <h2 className="text-center text-2xl font-bold leading-tight text-black">
                     Sign in to your account
                 </h2>
                 <p className="mt-2 text-center text-sm text-gray-600">
-                    Don't have an account? Create a free account
+                    Sign up for free!
                 </p>
                 <form className="mt-8" method="POST" action="#" onSubmit={handleSubmit}>
                     <div className="space-y-5">
